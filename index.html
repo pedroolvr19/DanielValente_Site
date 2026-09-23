@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -24,11 +24,11 @@
       <nav class="nav-links">
         <a href="#problema">[Solucao]</a>
         <a href="#resultados">[Resultados]</a>
-        <a href="#planos">[Precos]</a>
+        <a href="#contato">Acompanhamento</a>
       </nav>
       <div class="nav-cta">
         <a class="btn btn-ghost" href="#" style="display:none" id="btn-login">Entrar</a>
-        <a class="btn btn-primary" href="#planos">Comecar gratis</a>
+        <a class="btn btn-primary" href="#contato">Falar com Daniel</a>
       </div>
       <button class="nav-toggle" aria-label="menu">☰</button>
     </div>
@@ -42,8 +42,8 @@
         <p class="lede hero-anim">[Uma frase que descreve o que o produto faz, pra quem, e o resultado pratico. Termine
           com o principal ganho, ex: "Mais previsibilidade, menos caos."]</p>
         <div class="hero-cta-row hero-anim">
-          <a class="btn btn-primary" href="#planos">Comecar gratis</a>
-          <a class="btn btn-ghost" href="#planos">Ver planos</a>
+          <a class="btn btn-primary" href="#contato">Quero acompanhamento</a>
+          <a class="btn btn-ghost" href="#contato">Saber mais</a>
         </div>
         <div class="hero-trust hero-anim">✓ [Condicao de entrada, ex: "Gratis, sem cartao"] · planos a partir de
           <strong>R$ [XX,XX]/mes</strong></div>
@@ -82,61 +82,49 @@
     </div>
   </section>
 
-  <!-- ============ SECAO 8 — PRECOS ============ -->
-  <section id="planos">
+  <!-- ============ SECAO — ACOMPANHAMENTO ============ -->
+  <section id="contato">
     <div class="wrap">
-      <div class="pricing-head">
-        <div class="eyebrow center">[Planos]</div>
-        <h2>Comece hoje. Escale no seu ritmo.</h2>
-        <p class="lede center">[Condicao de entrada] · [ausencia de fidelidade/multa]</p>
+      <div class="contato-head reveal">
+        <div class="eyebrow center">Acompanhamento</div>
+        <h2>Escolha a modalidade ideal para você</h2>
+        <p class="lede center">Clique na opção desejada e fale diretamente com Daniel pelo WhatsApp.</p>
       </div>
 
-      <div class="toggle reveal">
-        <button id="btn-monthly" class="active" onclick="setBilling('monthly')">Mensal</button>
-        <button id="btn-yearly" onclick="setBilling('yearly')">Anual · economize [XX]%</button>
-      </div>
+      <div class="contato-cards reveal">
 
-      <div class="plans reveal">
-        <div class="plan">
-          <div class="plan-name">[Nome do plano 1]</div>
-          <div class="plan-price"><span class="price-m">R$ [XX,XX]</span><small>/mes</small></div>
-          <div class="plan-sub price-note-m">ate [N] [unidade]</div>
-          <div class="plan-sub price-note-y" style="display:none">cobrado R$ [XXX,XX] uma vez no ano</div>
-          <ul>
-            <li>[Recurso incluso 1]</li>
-            <li>[Recurso incluso 2]</li>
-            <li>[Recurso incluso 3]</li>
-          </ul>
-          <a class="btn btn-ghost" href="#">Assinar agora</a>
-        </div>
+        <!-- Card Presencial -->
+        <a
+          class="contato-card"
+          href="https://wa.me/5581985240198?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Acompanhamento%20Presencial."
+          target="_blank"
+          rel="noopener noreferrer"
+          id="btn-presencial">
+          <div class="contato-icon">🤝</div>
+          <div class="contato-info">
+            <span class="contato-label">Acompanhamento</span>
+            <span class="contato-title">Presencial</span>
+            <span class="contato-desc">Encontros ao vivo, acompanhamento direto e personalizado.</span>
+          </div>
+          <span class="contato-arrow">→</span>
+        </a>
 
-        <div class="plan featured">
-          <div class="plan-badge">Mais popular</div>
-          <div class="plan-name">[Nome do plano 2]</div>
-          <div class="plan-price"><span class="price-m">R$ [XXX,XX]</span><small>/mes</small></div>
-          <div class="plan-sub price-note-m">[unidade ilimitada / maior limite]</div>
-          <div class="plan-sub price-note-y" style="display:none">cobrado R$ [X.XXX,XX] uma vez no ano</div>
-          <ul>
-            <li>Tudo do plano anterior</li>
-            <li>[Recurso exclusivo 1]</li>
-            <li>[Recurso exclusivo 2]</li>
-            <li>[Recurso exclusivo 3]</li>
-          </ul>
-          <a class="btn btn-primary" href="#">Assinar agora</a>
-        </div>
+        <!-- Card Online -->
+        <a
+          class="contato-card contato-card--featured"
+          href="https://wa.me/5581985240198?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Acompanhamento%20On-line."
+          target="_blank"
+          rel="noopener noreferrer"
+          id="btn-online">
+          <div class="contato-icon">💻</div>
+          <div class="contato-info">
+            <span class="contato-label">Acompanhamento</span>
+            <span class="contato-title">On-line</span>
+            <span class="contato-desc">Sessões remotas, flexíveis e de qualquer lugar do mundo.</span>
+          </div>
+          <span class="contato-arrow">→</span>
+        </a>
 
-        <div class="plan">
-          <div class="plan-name">[Nome do plano 3]</div>
-          <div class="plan-price"><span class="price-m">R$ [XX,XX]</span><small>/mes</small></div>
-          <div class="plan-sub price-note-m">ate [N] [unidade]</div>
-          <div class="plan-sub price-note-y" style="display:none">cobrado R$ [XXX,XX] uma vez no ano</div>
-          <ul>
-            <li>[Recurso incluso 1]</li>
-            <li>[Recurso incluso 2]</li>
-            <li>[Recurso incluso 3]</li>
-          </ul>
-          <a class="btn btn-ghost" href="#">Assinar agora</a>
-        </div>
       </div>
     </div>
   </section>
@@ -147,7 +135,7 @@
       <div class="nav-logo" style="font-size:16px;">[Logo]</div>
       <div class="footer-links">
         <a href="#problema">[Solucao]</a>
-        <a href="#planos">[Precos]</a>
+        <a href="#contato">Acompanhamento</a>
       </div>
       <div>&copy; 2026 [Empresa] · Todos os direitos reservados.</div>
     </div>
