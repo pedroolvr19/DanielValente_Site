@@ -2,146 +2,236 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>[PRODUTO] — [Proposta de valor em uma frase]</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Daniel Valente — Personal Trainer | Acompanhamento Presencial e On-line</title>
+    <meta name="description"
+        content="Transforme seu corpo com acompanhamento personalizado. Daniel Valente, personal trainer especializado em resultados reais. Atendimento presencial e on-line.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Orbitron:wght@700&family=Cinzel:wght@800&display=swap"
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ============ SECAO 1 — NAV ============ -->
-  <header class="nav">
-    <div class="wrap">
-      <div class="nav-logo">[Logo]</div>
-      <nav class="nav-links">
-        <a href="#problema">[Solucao]</a>
-        <a href="#resultados">[Resultados]</a>
-        <a href="#contato">Acompanhamento</a>
-      </nav>
-      <div class="nav-cta">
-        <a class="btn btn-ghost" href="#" style="display:none" id="btn-login">Entrar</a>
-        <a class="btn btn-primary" href="#contato">Falar com Daniel</a>
-      </div>
-      <button class="nav-toggle" aria-label="menu">☰</button>
-    </div>
-  </header>
-
-  <!-- ============ SECAO 2 — HERO ============ -->
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <h1 class="hero-anim">[A forma mais simples de resolver o problema-alvo]</h1>
-        <p class="lede hero-anim">[Uma frase que descreve o que o produto faz, pra quem, e o resultado pratico. Termine
-          com o principal ganho, ex: "Mais previsibilidade, menos caos."]</p>
-        <div class="hero-cta-row hero-anim">
-          <a class="btn btn-primary" href="#contato">Quero acompanhamento</a>
-          <a class="btn btn-ghost" href="#contato">Saber mais</a>
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="topo">
+        <div class="wrap">
+            <a class="nav-logo" href="#topo">
+                <img src="logo1.png" alt="Daniel Valente Personal Trainer" style="max-height: 48px; width: auto;">
+            </a>
+            <nav class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#metodo">Método</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#contato">Acompanhamento</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Abrir menu" id="nav-toggle-btn">☰</button>
         </div>
-        <div class="hero-trust hero-anim">✓ [Condicao de entrada, ex: "Gratis, sem cartao"] · planos a partir de
-          <strong>R$ [XX,XX]/mes</strong></div>
-        <div class="hero-social hero-anim">
-          <div class="avatar-stack"><span></span><span></span><span></span><span></span><span></span></div>
-          <span style="font-size:13px; color:var(--text-muted)"><strong style="color:var(--text)">+[N mil]</strong>
-            [clientes/usuarios] ja usam o [produto]</span>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="wrap hero-wrap">
+            <div class="hero-content">
+                <h1 class="hero-anim">Seu corpo tem <em>potencial</em> que você ainda não descobriu.</h1>
+                <p class="lede hero-anim">Acompanhamento 100% personalizado, treino inteligente e evolução real.</p>
+                <div class="hero-cta-row hero-anim">
+                    <a class="btn btn-primary btn-lg" href="#contato" id="hero-btn-presencial">Quero treinar
+                        presencialmente</a>
+                    <a class="btn btn-ghost btn-lg" href="#contato" id="hero-btn-online">Treinar on-line</a>
+                </div>
+                <div class="hero-badges hero-anim">
+                    <div class="hero-badge"><span class="badge-icon">✓</span> Avaliação física gratuita</div>
+                    <div class="hero-badge"><span class="badge-icon">✓</span> Treino 100% individualizado</div>
+
+                </div>
+            </div>
+            <div class="hero-visual hero-anim">
+                <div class="hero-photo-frame">
+                    <img src="daniel.jpg" alt="Daniel Valente" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="hero-visual hero-anim">
-        <div class="float-card fc1"><b>[R$ valor]</b>[legenda curta]</div>
-        <div class="float-card fc2"><b>[Metrica]</b>[legenda curta]</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ SECAO 4 — PROVA DE RESULTADO ============ -->
-  <section>
-    <div class="wrap proof reveal">
-      <div>
-        <div class="eyebrow">[Categoria do beneficio, ex: "Gestao financeira"]</div>
-        <h2>[Beneficio tangivel que o painel/produto entrega]</h2>
-        <p class="lede" style="margin-top:16px;">[Uma frase explicando o que a pessoa ve/controla ao usar o produto.]
-        </p>
-      </div>
-      <div class="proof-panel">
-        <div>
-          <div style="font-size:12px; color:var(--text-muted); margin-bottom:4px;">[Metrica principal]</div>
-          <div class="proof-metric">[R$ 000.000]</div>
-          <div style="font-size:12px; color:var(--text-muted);">[periodo de referencia]</div>
+
+
+    <!-- ============ SOBRE ============ -->
+    <section id="sobre">
+        <div class="wrap sobre-wrap">
+            <div class="sobre-visual reveal">
+                <div class="sobre-photo-placeholder" style="overflow: hidden; padding: 0;">
+                    <img src="daniel.jpg" alt="Daniel Valente em ação"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="sobre-tag reveal">CREF · Recife - PE</div>
+            </div>
+            <div class="sobre-content reveal">
+                <div class="eyebrow">Quem é Daniel Valente</div>
+                <h2>Treinamento que respeita <em>a sua vida</em></h2>
+                <p class="lede" style="margin-top:16px;">Sou personal trainer certificado com mais de 5 anos
+                    transformando corpos e mentalidades. Acredito que o treino certo vai além da academia: é sobre
+                    consistência, estratégia e um acompanhamento que se adapta à sua rotina.</p>
+                <ul class="sobre-list">
+                    <li><span class="sobre-check">✓</span> Especializado em emagrecimento e hipertrofia</li>
+                    <li><span class="sobre-check">✓</span> Avaliação física completa e periódica</li>
+                    <li><span class="sobre-check">✓</span> Periodização e planilha personalizada</li>
+                    <li><span class="sobre-check">✓</span> Suporte via WhatsApp entre as sessões</li>
+                    <li><span class="sobre-check">✓</span> Atendimento presencial em Recife e on-line nacional</li>
+                </ul>
+                <a class="btn btn-primary" href="#contato" style="margin-top:24px; display:inline-flex;"
+                    id="sobre-btn-cta">Começar agora</a>
+            </div>
         </div>
-        <div class="proof-row"><span>[Item 1]</span><span>[valor/status]</span></div>
-        <div class="proof-row"><span>[Item 2]</span><span>[valor/status]</span></div>
-        <div class="proof-row"><span>[Item 3]</span><span>[valor/status]</span></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ SECAO — ACOMPANHAMENTO ============ -->
-  <section id="contato">
-    <div class="wrap">
-      <div class="contato-head reveal">
-        <div class="eyebrow center">Acompanhamento</div>
-        <h2>Escolha a modalidade ideal para você</h2>
-        <p class="lede center">Clique na opção desejada e fale diretamente com Daniel pelo WhatsApp.</p>
-      </div>
+    <!-- ============ MÉTODO (diferenciais) ============ -->
+    <section id="metodo" class="metodo-section">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <div class="eyebrow center">Como funciona</div>
+                <h2 class="center">O método que gera resultado de verdade</h2>
+                <p class="lede center" style="margin-top:12px;">Cada detalhe do seu treinamento é pensado para você
+                    evoluir rápido, com saúde e sem perder motivação.</p>
+            </div>
+            <div class="metodo-grid reveal">
+                <div class="metodo-card">
+                    <div class="metodo-icon">📋</div>
+                    <h3>Avaliação completa</h3>
+                    <p>Medidas corporais, histórico de saúde e objetivos mapeados antes do primeiro treino — sem
+                        achismos.</p>
+                </div>
+                <div class="metodo-card metodo-card--featured">
+                    <div class="metodo-badge">Diferencial</div>
+                    <div class="metodo-icon">🎯</div>
+                    <h3>Treino 100% individual</h3>
+                    <p>Nada de planilha genérica. Cada exercício, carga e série é montada exclusivamente para o seu
+                        perfil e objetivo.</p>
+                </div>
+                <div class="metodo-card">
+                    <div class="metodo-icon">📈</div>
+                    <h3>Evolução monitorada</h3>
+                    <p>Reavaliações periódicas, ajuste de cargas e progressão inteligente para você não estagnar jamais.
+                    </p>
+                </div>
+                <div class="metodo-card">
+                    <div class="metodo-icon">💬</div>
+                    <h3>Suporte contínuo</h3>
+                    <p>Tire dúvidas, relate dores ou peça ajuste de treino a qualquer momento pelo WhatsApp — sem
+                        burocracia.</p>
+                </div>
+                <div class="metodo-card">
+                    <div class="metodo-icon">🥗</div>
+                    <h3>Orientação nutricional</h3>
+                    <p>Dicas práticas de alimentação alinhadas ao seu treino para potencializar seus resultados no dia a
+                        dia.</p>
+                </div>
+                <div class="metodo-card">
+                    <div class="metodo-icon">🌐</div>
+                    <h3>Presencial ou on-line</h3>
+                    <p>Escolha o formato que encaixa na sua rotina. O nível de dedicação e qualidade é o mesmo nos dois
+                        modelos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="contato-cards reveal">
+    <!-- ============ CTA — ACOMPANHAMENTO ============ -->
+    <section id="contato" class="contato-section">
+        <div class="wrap">
+            <div class="contato-head reveal">
+                <div class="eyebrow center">Comece hoje</div>
+                <h2 class="center">Escolha como quer treinar</h2>
+                <p class="lede center" style="margin-top:12px;">Clique na modalidade e fale diretamente com Daniel pelo
+                    WhatsApp. É rápido, sem compromisso.</p>
+            </div>
 
-        <!-- Card Presencial -->
-        <a
-          class="contato-card"
-          href="https://wa.me/5581985240198?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Acompanhamento%20Presencial."
-          target="_blank"
-          rel="noopener noreferrer"
-          id="btn-presencial">
-          <div class="contato-icon">🤝</div>
-          <div class="contato-info">
-            <span class="contato-label">Acompanhamento</span>
-            <span class="contato-title">Presencial</span>
-            <span class="contato-desc">Encontros ao vivo, acompanhamento direto e personalizado.</span>
-          </div>
-          <span class="contato-arrow">→</span>
-        </a>
+            <div class="contato-cards reveal">
 
-        <!-- Card Online -->
-        <a
-          class="contato-card contato-card--featured"
-          href="https://wa.me/5581985240198?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Acompanhamento%20On-line."
-          target="_blank"
-          rel="noopener noreferrer"
-          id="btn-online">
-          <div class="contato-icon">💻</div>
-          <div class="contato-info">
-            <span class="contato-label">Acompanhamento</span>
-            <span class="contato-title">On-line</span>
-            <span class="contato-desc">Sessões remotas, flexíveis e de qualquer lugar do mundo.</span>
-          </div>
-          <span class="contato-arrow">→</span>
-        </a>
+                <!-- Card Presencial -->
+                <a class="contato-card"
+                    href="https://wa.me/5581985240198?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Acompanhamento%20Presencial."
+                    target="_blank" rel="noopener noreferrer" id="btn-presencial">
+                    <div class="contato-card-top">
+                        <div class="contato-icon">🤝</div>
+                        <div class="contato-card-label">Acompanhamento</div>
+                        <div class="contato-card-title">Presencial</div>
+                        <div class="contato-card-location">📍 Recife — PE</div>
+                    </div>
+                    <ul class="contato-card-list">
+                        <li>Treino ao vivo com Daniel</li>
+                        <li>Correção de postura em tempo real</li>
+                        <li>Avaliação física presencial</li>
+                        <li>Planilha e suporte via WhatsApp</li>
+                    </ul>
+                    <div class="contato-card-btn">
+                        <span>Falar no WhatsApp</span>
+                        <span class="contato-arrow">→</span>
+                    </div>
+                </a>
 
-      </div>
-    </div>
-  </section>
+                <!-- Card Online -->
+                <a class="contato-card contato-card--featured"
+                    href="https://wa.me/5581985240198?text=Ol%C3%A1%20Daniel%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Acompanhamento%20On-line."
+                    target="_blank" rel="noopener noreferrer" id="btn-online">
+                    <div class="contato-badge">Mais flexível</div>
+                    <div class="contato-card-top">
+                        <div class="contato-icon">💻</div>
+                        <div class="contato-card-label">Acompanhamento</div>
+                        <div class="contato-card-title">On-line</div>
+                        <div class="contato-card-location">🌐 Todo o Brasil</div>
+                    </div>
+                    <ul class="contato-card-list">
+                        <li>Planilha personalizada no app</li>
+                        <li>Check-ins semanais de evolução</li>
+                        <li>Suporte diário via WhatsApp</li>
+                        <li>Vídeos de execução dos exercícios</li>
+                    </ul>
+                    <div class="contato-card-btn">
+                        <span>Falar no WhatsApp</span>
+                        <span class="contato-arrow">→</span>
+                    </div>
+                </a>
 
-  <!-- ============ SECAO 11 — FOOTER ============ -->
-  <footer>
-    <div class="wrap footer-row">
-      <div class="nav-logo" style="font-size:16px;">[Logo]</div>
-      <div class="footer-links">
-        <a href="#problema">[Solucao]</a>
-        <a href="#contato">Acompanhamento</a>
-      </div>
-      <div>&copy; 2026 [Empresa] · Todos os direitos reservados.</div>
-    </div>
-  </footer>
+            </div>
 
-  <script src="script.js"></script>
+            <p class="contato-note reveal">Primeira conversa sem compromisso · Avaliação gratuita · Sem fidelidade</p>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="wrap footer-row">
+            <div class="footer-brand">
+                <a class="nav-logo" href="#topo">
+                    <img src="logo.png" alt="Daniel Valente Personal Trainer" style="max-height: 40px; width: auto;">
+                </a>
+                <div class="footer-subtitle">Personal Trainer · Recife - PE</div>
+            </div>
+            <div class="footer-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#metodo">Método</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#contato">Acompanhamento</a>
+            </div>
+            <div class="footer-right">
+                <a class="footer-whatsapp" href="https://wa.me/5581985240198" target="_blank" rel="noopener noreferrer"
+                    id="footer-whatsapp-btn">
+                    <span>📲</span> +55 81 8524-0198
+                </a>
+                <div style="margin-top:8px;">© 2026 Daniel Valente · Todos os direitos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
