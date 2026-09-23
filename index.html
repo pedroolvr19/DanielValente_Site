@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>[PRODUTO] — [Proposta de valor em uma frase]</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ SECAO 1 — NAV ============ -->
+  <header class="nav">
+    <div class="wrap">
+      <div class="nav-logo">[Logo]</div>
+      <nav class="nav-links">
+        <a href="#problema">[Solucao]</a>
+        <a href="#resultados">[Resultados]</a>
+        <a href="#planos">[Precos]</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="#" style="display:none" id="btn-login">Entrar</a>
+        <a class="btn btn-primary" href="#planos">Comecar gratis</a>
+      </div>
+      <button class="nav-toggle" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ============ SECAO 2 — HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1 class="hero-anim">[A forma mais simples de resolver o problema-alvo]</h1>
+        <p class="lede hero-anim">[Uma frase que descreve o que o produto faz, pra quem, e o resultado pratico. Termine
+          com o principal ganho, ex: "Mais previsibilidade, menos caos."]</p>
+        <div class="hero-cta-row hero-anim">
+          <a class="btn btn-primary" href="#planos">Comecar gratis</a>
+          <a class="btn btn-ghost" href="#planos">Ver planos</a>
+        </div>
+        <div class="hero-trust hero-anim">✓ [Condicao de entrada, ex: "Gratis, sem cartao"] · planos a partir de
+          <strong>R$ [XX,XX]/mes</strong></div>
+        <div class="hero-social hero-anim">
+          <div class="avatar-stack"><span></span><span></span><span></span><span></span><span></span></div>
+          <span style="font-size:13px; color:var(--text-muted)"><strong style="color:var(--text)">+[N mil]</strong>
+            [clientes/usuarios] ja usam o [produto]</span>
+        </div>
+      </div>
+      <div class="hero-visual hero-anim">
+        <div class="float-card fc1"><b>[R$ valor]</b>[legenda curta]</div>
+        <div class="float-card fc2"><b>[Metrica]</b>[legenda curta]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECAO 4 — PROVA DE RESULTADO ============ -->
+  <section>
+    <div class="wrap proof reveal">
+      <div>
+        <div class="eyebrow">[Categoria do beneficio, ex: "Gestao financeira"]</div>
+        <h2>[Beneficio tangivel que o painel/produto entrega]</h2>
+        <p class="lede" style="margin-top:16px;">[Uma frase explicando o que a pessoa ve/controla ao usar o produto.]
+        </p>
+      </div>
+      <div class="proof-panel">
+        <div>
+          <div style="font-size:12px; color:var(--text-muted); margin-bottom:4px;">[Metrica principal]</div>
+          <div class="proof-metric">[R$ 000.000]</div>
+          <div style="font-size:12px; color:var(--text-muted);">[periodo de referencia]</div>
+        </div>
+        <div class="proof-row"><span>[Item 1]</span><span>[valor/status]</span></div>
+        <div class="proof-row"><span>[Item 2]</span><span>[valor/status]</span></div>
+        <div class="proof-row"><span>[Item 3]</span><span>[valor/status]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECAO 8 — PRECOS ============ -->
+  <section id="planos">
+    <div class="wrap">
+      <div class="pricing-head">
+        <div class="eyebrow center">[Planos]</div>
+        <h2>Comece hoje. Escale no seu ritmo.</h2>
+        <p class="lede center">[Condicao de entrada] · [ausencia de fidelidade/multa]</p>
+      </div>
+
+      <div class="toggle reveal">
+        <button id="btn-monthly" class="active" onclick="setBilling('monthly')">Mensal</button>
+        <button id="btn-yearly" onclick="setBilling('yearly')">Anual · economize [XX]%</button>
+      </div>
+
+      <div class="plans reveal">
+        <div class="plan">
+          <div class="plan-name">[Nome do plano 1]</div>
+          <div class="plan-price"><span class="price-m">R$ [XX,XX]</span><small>/mes</small></div>
+          <div class="plan-sub price-note-m">ate [N] [unidade]</div>
+          <div class="plan-sub price-note-y" style="display:none">cobrado R$ [XXX,XX] uma vez no ano</div>
+          <ul>
+            <li>[Recurso incluso 1]</li>
+            <li>[Recurso incluso 2]</li>
+            <li>[Recurso incluso 3]</li>
+          </ul>
+          <a class="btn btn-ghost" href="#">Assinar agora</a>
+        </div>
+
+        <div class="plan featured">
+          <div class="plan-badge">Mais popular</div>
+          <div class="plan-name">[Nome do plano 2]</div>
+          <div class="plan-price"><span class="price-m">R$ [XXX,XX]</span><small>/mes</small></div>
+          <div class="plan-sub price-note-m">[unidade ilimitada / maior limite]</div>
+          <div class="plan-sub price-note-y" style="display:none">cobrado R$ [X.XXX,XX] uma vez no ano</div>
+          <ul>
+            <li>Tudo do plano anterior</li>
+            <li>[Recurso exclusivo 1]</li>
+            <li>[Recurso exclusivo 2]</li>
+            <li>[Recurso exclusivo 3]</li>
+          </ul>
+          <a class="btn btn-primary" href="#">Assinar agora</a>
+        </div>
+
+        <div class="plan">
+          <div class="plan-name">[Nome do plano 3]</div>
+          <div class="plan-price"><span class="price-m">R$ [XX,XX]</span><small>/mes</small></div>
+          <div class="plan-sub price-note-m">ate [N] [unidade]</div>
+          <div class="plan-sub price-note-y" style="display:none">cobrado R$ [XXX,XX] uma vez no ano</div>
+          <ul>
+            <li>[Recurso incluso 1]</li>
+            <li>[Recurso incluso 2]</li>
+            <li>[Recurso incluso 3]</li>
+          </ul>
+          <a class="btn btn-ghost" href="#">Assinar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECAO 11 — FOOTER ============ -->
+  <footer>
+    <div class="wrap footer-row">
+      <div class="nav-logo" style="font-size:16px;">[Logo]</div>
+      <div class="footer-links">
+        <a href="#problema">[Solucao]</a>
+        <a href="#planos">[Precos]</a>
+      </div>
+      <div>&copy; 2026 [Empresa] · Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
